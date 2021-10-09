@@ -1,5 +1,6 @@
 #instal java 8
-sudo apt-get install -y openjdk-8jdk
+sudo apt-get update
+sudo apt-get install -y openjdk-8-jdk
 #downloading tomcat version 8
 wget https://downloads.apache.org/tomcat/tomcat-8/v8.5.71/bin/apache-tomcat-8.5.71.tar.gz
 tar zxf apache-tomcat-8.5.71.tar.gz
@@ -14,8 +15,8 @@ wget https://dlcdn.apache.org/maven/maven-3/3.8.3/binaries/apache-maven-3.8.3-bi
 
 tar zxf apache-maven-3.8.3-bin.tar.gz
 
-sudo export PATH=$PATH:/home/ubuntu/apache-maven-3.8.3/bin
+export PATH=$PATH:/home/ubuntu/apache-maven-3.8.3/bin
 
 #installing ansible
-sudo apt-add-repository ppa:ansible/ansible
+sudo apt-add-repository -y ppa:ansible/ansible
 sudo apt-get install -y ansible
